@@ -1,0 +1,30 @@
+{
+  "name": "twig-includes-cli",
+  "description": "A simple CLI tool utilizing Twig's includes and extends.",
+  "keywords": [
+    "cli",
+    "html",
+    "includes",
+    "twig"
+  ],
+  "author": "Nathan Searles <nsearles@gmail.com> (http://nathansearles.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathansearles/twig-includes-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/nathansearles/twig-includes-cli/issues"
+  },
+  "main": "./twig-includes-cli.js",
+  "version": "1.0.0",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "glob": "^5.0.14",
+    "twig": "^0.8.2"
+  },
+  "license": "MIT",
+  "bin": {
+    "twig": "./twig-includes-cli.js",
+    "twigcli": "./twig-includes-cli.js"
+  }
+}
