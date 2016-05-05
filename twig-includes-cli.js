@@ -5,6 +5,7 @@ var fs = require('fs'),
     twig = require('twig').twig,
     glob = require('glob'),
     path = require('path'),
+    mkdirp = require('mkdirp'),
     pkgJSON = require("./package.json");
 
 program
@@ -32,7 +33,9 @@ program
       if (stats.isDirectory()) {}
     } catch (e) {
       // Make directory
-      fs.mkdirSync(outputPath);
+      mkdirp(outputPath, function (err) {
+        if (err) console.error(err)
+      });
     }
 
     // Glob options
@@ -72,7 +75,9 @@ program
             }
           } catch (e) {
             // Make directory
-            fs.mkdirSync(outputPath);
+            mkdirp(outputPath, function (err) {
+              if (err) console.error(err)
+            });
 
             twigify(input, output);
           }
