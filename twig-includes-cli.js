@@ -40,7 +40,7 @@ program
 
     // Glob options
     var options = {
-      ignore: [program.output + '/**', 'node_modules/**', '_*/**']
+      ignore: [program.output + '/**', 'node_modules/**', '**/_*/**']
     };
 
     glob(input, options, function(er, files) {
