@@ -16,7 +16,7 @@
     "url": "https://github.com/nathansearles/twig-includes-cli/issues"
   },
   "main": "./twig-includes-cli.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "commander": "^2.8.1",
     "glob": "^5.0.14",
