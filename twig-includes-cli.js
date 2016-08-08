@@ -64,7 +64,7 @@ program
 
         // Is input within a directory?
         if (pathArray.length > 0) {
-          var outputPath = path.normalize(program.output + '/' + pathArray.join('/'));
+          var pathArray = inputPath.split('/').filter(function(v){return v!==''});
 
           try {
             var stats = fs.lstatSync(outputPath);
