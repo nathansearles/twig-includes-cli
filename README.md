@@ -57,7 +57,7 @@ Within *_includes/header.html*
 CLI usage
 
 ```
-$ twig 'source/**/*.html' --root source/ -output build/
+$ twig 'source/**/*.html' --root source/ --output build/
 ```
 
 This will find all .html files within 'source/', uses Twig to render includes, and output all .html files to 'build/'.
